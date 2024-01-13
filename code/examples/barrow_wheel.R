@@ -155,10 +155,10 @@ print(mclust::adjustedRandIndex(data[, 1], out$clusters))
 # MFA --------------------------------------------------------------------------
 # McLachlan et al. (2003): implemented in function mfa() in package EMMIXmfa
 set.seed(072023)
-out <- mfa(Y = data[, -1], g = 3, q = 1)
-table(out$clus, data[, 1])
+res <- mfa(Y = data[, -1], g = 3, q = 1)
+table(res$clus, data[, 1])
 print("MFA")
-print(mclust::adjustedRandIndex(data[, 1], out$clus))
+print(mclust::adjustedRandIndex(data[, 1], res$clus))
 
 
 # clustvarsel ------------------------------------------------------------------
