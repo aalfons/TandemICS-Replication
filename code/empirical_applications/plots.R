@@ -11,10 +11,6 @@ library("ICSClust")
 library("ggplot2")
 library("ggthemes")  # scale_color_colorblind ()
 library("scales")
-#library("ggh4x")     #  facet_nested()
-
-# latex tables
-library("xtable")
 
 # data
 library("MASS")      # crabs data
@@ -200,6 +196,10 @@ dev.off()
 
 # colors for different clusters
 colors <- scales::hue_pal()(5)[c(2, 4, 5, 1)]
+
+# set seed of the random number generator
+set.seed(20230508)
+
 
 ## Crabs data -----
 
