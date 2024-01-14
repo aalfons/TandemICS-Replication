@@ -40,10 +40,10 @@ plot_Xstd <- as.data.frame(Xstd) %>%
 
 # file name for plot
 file_plot <- "figures/examples/Xstd.%s"
-# save plot to pdf
-pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
-print(plot_Xstd)
-dev.off()
+# # save plot to pdf
+# pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
+# print(plot_Xstd)
+# dev.off()
 # save plot to png
 png(sprintf(file_plot, "png"), width = 6, height = 6,
     unit = "in", res = 250)
@@ -72,10 +72,10 @@ plot_kmeans_Xstd <- data.frame(Xstd,
 
 # file name for plot
 file_plot <- "figures/examples/kmeans_Xstd.%s"
-# save plot to pdf
-pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
-print(plot_kmeans_Xstd)
-dev.off()
+# # save plot to pdf
+# pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
+# print(plot_kmeans_Xstd)
+# dev.off()
 # save plot to png
 png(sprintf(file_plot, "png"), width = 6, height = 6,
     unit = "in", res = 250)
@@ -109,10 +109,10 @@ plot_PCA <- as.data.frame(res_PCA$scores) %>%
 
 # file name for plot
 file_plot <- "figures/examples/PCA.%s"
-# save plot to pdf
-pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
-print(plot_PCA)
-dev.off()
+# # save plot to pdf
+# pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
+# print(plot_PCA)
+# dev.off()
 # save plot to png
 png(sprintf(file_plot, "png"), width = 6, height = 6,
     unit = "in", res = 250)
@@ -132,10 +132,10 @@ plot_kmeans_PCA <- data.frame(Xstd,
 
 # file name for plot
 file_plot <- "figures/examples/kmeans_PCA.%s"
-# save plot to pdf
-pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
-print(plot_kmeans_PCA)
-dev.off()
+# # save plot to pdf
+# pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
+# print(plot_kmeans_PCA)
+# dev.off()
 # save plot to png
 png(sprintf(file_plot, "png"), width = 6, height = 6,
     unit = "in", res = 250)
@@ -164,10 +164,10 @@ plot_ICS <- as.data.frame(components(res_ICS)) %>%
 
 # file name for plot
 file_plot <- "figures/examples/ICS.%s"
-# save plot to pdf
-pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
-print(plot_ICS)
-dev.off()
+# # save plot to pdf
+# pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
+# print(plot_ICS)
+# dev.off()
 # save plot to png
 png(sprintf(file_plot, "png"), width = 6, height = 6,
     unit = "in", res = 250)
@@ -187,10 +187,10 @@ plot_kmeans_ICS <- data.frame(Xstd,
 
 # file name for plot
 file_plot <- "figures/examples/kmeans_ICS.%s"
-# save plot to pdf
-pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
-print(plot_kmeans_ICS)
-dev.off()
+# # save plot to pdf
+# pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
+# print(plot_kmeans_ICS)
+# dev.off()
 # save plot to png
 png(sprintf(file_plot, "png"), width = 6, height = 6,
     unit = "in", res = 250)
@@ -220,10 +220,10 @@ plot_distances_Xstd <- data.frame(index = seq_along(distances_Xstd),
 
 # file name for plot
 file_plot <- "figures/examples/distances_Xstd.%s"
-# save plot to pdf
-pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
-print(plot_distances_Xstd)
-dev.off()
+# # save plot to pdf
+# pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
+# print(plot_distances_Xstd)
+# dev.off()
 # save plot to png
 png(sprintf(file_plot, "png"), width = 6, height = 6,
     unit = "in", res = 250)
@@ -251,10 +251,10 @@ plot_distances_PCA <- data.frame(index = seq_along(distances_PCA),
 
 # file name for plot
 file_plot <- "figures/examples/distances_PCA.%s"
-# save plot to pdf
-pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
-print(plot_distances_PCA)
-dev.off()
+# # save plot to pdf
+# pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
+# print(plot_distances_PCA)
+# dev.off()
 # save plot to png
 png(sprintf(file_plot, "png"), width = 6, height = 6,
     unit = "in", res = 250)
@@ -283,10 +283,10 @@ plot_distances_ICS <- data.frame(index = seq_along(distances_ICS),
 
 # file name for plot
 file_plot <- "figures/examples/distances_ICS.%s"
-# save plot to pdf
-pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
-print(plot_distances_ICS)
-dev.off()
+# # save plot to pdf
+# pdf(sprintf(file_plot, "pdf"), width = 6, height = 6)
+# print(plot_distances_ICS)
+# dev.off()
 # save plot to png
 png(sprintf(file_plot, "png"), width = 6, height = 6,
     unit = "in", res = 250)
@@ -361,10 +361,10 @@ res_list <- mapply(function(scatter, ICS_scatters) {
   #
   # # file name for plot
   # file_plot <- "figures/examples/ICS_%s.%s"
-  # # save plot to pdf
-  # pdf(sprintf(file_plot, scatter, "pdf"), width = 6, height = 6)
-  # print(plot_ICS)
-  # dev.off()
+  # # # save plot to pdf
+  # # pdf(sprintf(file_plot, scatter, "pdf"), width = 6, height = 6)
+  # # print(plot_ICS)
+  # # dev.off()
   # # save plot to png
   # png(sprintf(file_plot, scatter, "png"), width = 6, height = 6,
   #     unit = "in", res = 250)
@@ -384,10 +384,10 @@ res_list <- mapply(function(scatter, ICS_scatters) {
   #
   # # file name for plot
   # file_plot <- "figures/examples/kmeans_ICS_%s.%s"
-  # # save plot to pdf
-  # pdf(sprintf(file_plot, scatter, "pdf"), width = 6, height = 6)
-  # print(plot_kmeans_ICS)
-  # dev.off()
+  # # # save plot to pdf
+  # # pdf(sprintf(file_plot, scatter, "pdf"), width = 6, height = 6)
+  # # print(plot_kmeans_ICS)
+  # # dev.off()
   # # save plot to png
   # png(sprintf(file_plot, scatter, "png"), width = 6, height = 6,
   #     unit = "in", res = 250)
