@@ -1,3 +1,9 @@
+# *********************************************
+# Authors: Aurore Archimbaud and Andreas Alfons
+#          Erasmus University Rotterdam
+# *********************************************
+
+
 # Tolerance ellipses of different scatter and shape matrices -------------------
 
 # Packages and functions -------------------------------------------------------

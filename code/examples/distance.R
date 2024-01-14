@@ -1,3 +1,9 @@
+# *********************************************
+# Authors: Aurore Archimbaud and Andreas Alfons
+#          Erasmus University Rotterdam
+# *********************************************
+
+
 # Pairwise distances when structure is in a low-dimensional subspace -----------
 
 # Packages and functions -------------------------------------------------------

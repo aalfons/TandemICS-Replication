@@ -1,13 +1,15 @@
+# *********************************************
+# Authors: Aurore Archimbaud and Andreas Alfons
+#          Erasmus University Rotterdam
+# *********************************************
 
-# load packages
+
+# Packages and functions -------------------------------------------------------
 library("dplyr")
 library("ggplot2")
 library("ggthemes")
 library("magrittr")
 
-
-
-# Utility functions ------------------------------------------------------------
 # function for parsing axis labels
 parse_labels <- function(labels, ...) parse(text = labels, ...)
 

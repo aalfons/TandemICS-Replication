@@ -1,3 +1,8 @@
+# ************************************
+# Author: Aurore Archimbaud
+#         Erasmus University Rotterdam
+# ************************************
+
 
 # Packages ----------------------------------------------------------------
 library("parallel")
