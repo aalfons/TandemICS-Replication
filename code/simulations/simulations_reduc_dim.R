@@ -1,10 +1,11 @@
 
-# Libraries ---------------------------------------------------------------
+# Packages ----------------------------------------------------------------
 
 library("parallel")
 library("ICS")
 library("rrcov")
 library("ICSClust")
+
 
 # Parameters --------------------------------------------------------------
 
@@ -12,7 +13,7 @@ library("ICSClust")
 n <- 1000                               # number of observations
 p <- 10                                 # number of variables
 delta <- 10                             # shift location
-R <- 100                                 # number of simulation runs
+R <- 100                                # number of simulation runs
 seed <- 20230509                        # seed of the random number generator
 n_cores <- 5                            # number of cores
 

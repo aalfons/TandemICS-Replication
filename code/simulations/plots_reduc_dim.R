@@ -149,7 +149,7 @@ keep_clusters <- c("50-50", "70-30", "80-20", "90-10", "95-5",
 
 ## overall results across cluster settings
 
-# select subset of methods
+# select subset of results
 res_df_selected <- res_df %>%
   filter(outliers %in% keep_outliers,
          criterion %in% keep_crit,
@@ -242,7 +242,7 @@ keep_clusters <- c("50-50", "55-45", "60-40", "70-30", "80-20", "90-10", "95-5",
 
 ## overall results across cluster settings
 
-# select subset of methods
+# select subset of results
 res_df_selected <- res_df %>%
   filter(outliers %in% keep_outliers,
          criterion %in% keep_crit,

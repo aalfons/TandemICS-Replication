@@ -95,7 +95,7 @@ keep_method <- c("PAM", "kmeans", "tkmeans", "mclust", "rmclust")
 
 ## overall results across cluster settings
 
-# select subset of methods
+# select subset of results
 res_df_selected <- res_df %>%
   filter(outliers %in% keep_outliers,
          is.na(criterion) | criterion %in% keep_crit,
@@ -216,7 +216,7 @@ keep_method <- c(keep_method_ICS, keep_method_GMM)
 method_labels <- c(mclust = "ICS + mclust", rmclust = "ICS + rmclust",
                    MFA = "MFA", clustvarsel = "clustvarsel")
 
-# select subset of methods
+# select subset of results
 res_df_ICS <- res_df %>%
   filter(outliers %in% keep_outliers,
          is.na(criterion) | criterion %in% keep_crit,
@@ -264,14 +264,14 @@ plot_GMM <-
   coord_flip()
 
 # file name for plot
-file_plot = "figures/simulations/clustering/%s_%s_GMM.%s"
+file_plot = "figures/simulations/clustering/%s_GMM.%s"
 # save plot to pdf
-pdf(sprintf(file_plot, measures[1], measures[2], "pdf"),
+pdf(sprintf(file_plot, paste(measures, collapse = "_"), "pdf"),
     width = 8, height = 4.8)
 print(plot_GMM)
 dev.off()
 # save plot to png
-png(sprintf(file_plot, measures[1], measures[2], "png"),
+png(sprintf(file_plot, paste(measures, collapse = "_"), "png"),
     width = 8, height = 4.8, unit = "in", res = 250)
 print(plot_GMM)
 dev.off()

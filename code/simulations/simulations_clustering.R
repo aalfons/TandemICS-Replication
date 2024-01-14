@@ -1,12 +1,12 @@
-renv::restore()
-# Libraries ---------------------------------------------------------------
+
+# Packages ----------------------------------------------------------------
 library("parallel")
 library("ICS")
 library("rrcov")
 library("ICSClust")
-
 library("EMMIXmfa")
 library("clustvarsel")
+
 
 # Parameters --------------------------------------------------------------
 
