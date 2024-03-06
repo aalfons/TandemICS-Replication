@@ -37,7 +37,7 @@ criterion_label <- "Component selection"
 # component selection criteria, etc.
 
 # load results from file
-p = 10
+p <- 10
 load( sprintf("results/simulations/results_clustering_p=%d_r=100.RData", p))
 
 # rename some stuff and filter relevant results
@@ -261,7 +261,7 @@ plot_GMM <-
         strip.text.x = element_text(size = 10 * text_size_factor),
         strip.text.y = element_text(size = 9 * text_size_factor),
         legend.position = "top") +
-  labs(x = NULL, y = measure_label) +
+  labs(x = NULL, y = NULL) +
   facet_grid(outliers ~ measure, scales = "free_x") +
   coord_flip()
 
