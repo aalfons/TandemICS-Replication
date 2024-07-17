@@ -12,11 +12,11 @@ More information can be found in our article:
 
 A. Alfons, A. Archimbaud, K. Nordhausen and A. Ruiz-Gazen (2024).
 Tandem clustering with invariant coordinate selection. 
-arXiv preprint [arXiv:2212.06108](https://arxiv.org/abs/2212.06108).
+*Econometrics and Statistics*. doi: [10.1016/j.ecosta.2024.03.002](https://doi.org/10.1016/j.ecosta.2024.03.002).
 
 ## Reproduce results
 This repository provides a collection of [R](https://CRAN.R-project.org/) 
-scripts to reproduce all examples, simulations and figures in our article.
+scripts to reproduce all examples, simulations, and figures in our article.
 
 The easiest way to reproduce the results is to clone this repository with 
 [RStudio](https://rstudio.com/products/rstudio/download/).  Running the 
